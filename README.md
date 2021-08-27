@@ -19,7 +19,7 @@ Integration Scopes (you can create a new one, or add keys to existing)
 
   *  Register a webhook
   *  Create a submission
-  *  Upload a file to the submission
+  *  Upload a file for the submission
   *  Wait for the submission upload to process
      * If you registered a webhook, a callback will be sent to it when upload is complete
      * The status of the *submission* will also update to `COMPLETE`
