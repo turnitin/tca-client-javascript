@@ -421,7 +421,7 @@ let xTurnitinIntegrationVersion = v1.0.2; // String | the version of the integra
 let groupId = "groupId_example"; // String | The Group ID (required to already exist) 
 let attachId = "attachId_example"; // String | The attachment ID (returned from a successful group attachment request) 
 let contentDisposition = inline; filename="MyFile.docx"; // String | *must include the \"filename\" parameter, e.g. `inline; filename=\"MyFile.docx\"` 
-let file = null; // Object | the attachment file
+let file = {key: null}; // Object | the attachment file
 apiInstance.uploadGroupAttachment(xTurnitinIntegrationName, xTurnitinIntegrationVersion, groupId, attachId, contentDisposition, file, (error, data, response) => {
   if (error) {
     console.error(error);

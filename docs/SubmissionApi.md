@@ -251,7 +251,7 @@ let xTurnitinIntegrationVersion = v1.0.2; // String | the version of the integra
 let id = "id_example"; // String | The Submission ID (returned upon a successful POST to /submissions) 
 let contentType = "contentType_example"; // String | *Must be 'binary/octet-stream' 
 let contentDisposition = inline; filename="MyFile.docx"; // String | *must include the \"filename\" parameter, e.g. `inline; filename=\"MyFile.docx\"`. To support UTF-8 filenames, you must URL encode the header 
-let file = null; // Object | the user's submitted file
+let file = {key: null}; // Object | the user's submitted file
 apiInstance.uploadSubmittedFile(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, contentType, contentDisposition, file, (error, data, response) => {
   if (error) {
     console.error(error);

@@ -37,10 +37,6 @@ docs/SimilarityGenerationSettings.md
 docs/SimilarityMetadata.md
 docs/SimilarityMetadataAllOf.md
 docs/SimilarityMetadataAllOfTopMatches.md
-docs/SimilarityOverview.md
-docs/SimilarityOverviewMatchAggregate.md
-docs/SimilarityOverviewMatchGroup.md
-docs/SimilarityOverviewMatchSource.md
 docs/SimilarityPutRequest.md
 docs/SimilarityScoreData.md
 docs/SimilaritySettings.md
@@ -110,10 +106,6 @@ src/model/SimilarityGenerationSettings.js
 src/model/SimilarityMetadata.js
 src/model/SimilarityMetadataAllOf.js
 src/model/SimilarityMetadataAllOfTopMatches.js
-src/model/SimilarityOverview.js
-src/model/SimilarityOverviewMatchAggregate.js
-src/model/SimilarityOverviewMatchGroup.js
-src/model/SimilarityOverviewMatchSource.js
 src/model/SimilarityPutRequest.js
 src/model/SimilarityScoreData.js
 src/model/SimilaritySettings.js
@@ -176,10 +168,6 @@ test/model/SimilarityGenerationSettings.spec.js
 test/model/SimilarityMetadata.spec.js
 test/model/SimilarityMetadataAllOf.spec.js
 test/model/SimilarityMetadataAllOfTopMatches.spec.js
-test/model/SimilarityOverview.spec.js
-test/model/SimilarityOverviewMatchAggregate.spec.js
-test/model/SimilarityOverviewMatchGroup.spec.js
-test/model/SimilarityOverviewMatchSource.spec.js
 test/model/SimilarityPutRequest.spec.js
 test/model/SimilarityScoreData.spec.js
 test/model/SimilaritySettings.spec.js
