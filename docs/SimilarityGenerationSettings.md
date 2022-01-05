@@ -44,12 +44,3 @@ Name | Type | Description | Notes
 
 
 
-
-## Enum: PriorityEnum
-
-
-* `false` (value: `"false"`)
-
-
-
-
