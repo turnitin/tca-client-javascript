@@ -14,11 +14,11 @@ Name | Type | Description | Notes
 ## Enum: [AccessOptionsEnum]
 
 
-* `Native` (value: `"Native"`)
+* `NATIVE` (value: `"NATIVE"`)
 
 * `CORE_API` (value: `"CORE_API"`)
 
-* `Draft Coach` (value: `"Draft Coach"`)
+* `DRAFT_COACH` (value: `"DRAFT_COACH"`)
 
 
 
