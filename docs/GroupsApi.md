@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 
 ## getGroupAttachments
 
-> InlineResponse200 getGroupAttachments(xTurnitinIntegrationName, xTurnitinIntegrationVersion, groupId)
+> GetGroupAttachments200Response getGroupAttachments(xTurnitinIntegrationName, xTurnitinIntegrationVersion, groupId)
 
 Get all attachments
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**GetGroupAttachments200Response**](GetGroupAttachments200Response.md)
 
 ### Authorization
 

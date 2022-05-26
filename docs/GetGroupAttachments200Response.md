@@ -1,4 +1,4 @@
-# TurnitinCoreApi.InlineResponse200
+# TurnitinCoreApi.GetGroupAttachments200Response
 
 ## Properties
 

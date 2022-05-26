@@ -21,6 +21,10 @@ Name | Type | Description | Notes
 
 * `COMPLETE` (value: `"COMPLETE"`)
 
+* `DELETED` (value: `"DELETED"`)
+
+* `ERROR` (value: `"ERROR"`)
+
 
 
 

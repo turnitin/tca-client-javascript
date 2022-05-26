@@ -25,7 +25,11 @@ Name | Type | Description | Notes
 
 * `PROCESSING` (value: `"PROCESSING"`)
 
-* `COMPLETED` (value: `"COMPLETED"`)
+* `COMPLETE` (value: `"COMPLETE"`)
+
+* `DELETED` (value: `"DELETED"`)
+
+* `ERROR` (value: `"ERROR"`)
 
 
 

@@ -1,4 +1,4 @@
-# TurnitinCoreApi.WebhooksMetadata
+# TurnitinCoreApi.SubmissionCompleteWebhookRequestAllOfMetadata
 
 ## Properties
 

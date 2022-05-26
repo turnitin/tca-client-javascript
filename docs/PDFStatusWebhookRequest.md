@@ -1,4 +1,4 @@
-# TurnitinCoreApi.InlineObject
+# TurnitinCoreApi.PDFStatusWebhookRequest
 
 ## Properties
 
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **status** | **String** | The requesting Pdf status | [optional] 
 **id** | **String** | the PDF ID | [optional] 
 **submissionId** | **String** | the associated submission ID | [optional] 
-**metadata** | [**WebhooksMetadata**](WebhooksMetadata.md) |  | [optional] 
+**metadata** | [**SubmissionCompleteWebhookRequestAllOfMetadata**](SubmissionCompleteWebhookRequestAllOfMetadata.md) |  | [optional] 
 
 
 
