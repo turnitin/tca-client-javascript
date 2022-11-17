@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new TurnitinCoreApi.Error();
+    instance = new TurnitinCoreApi.GenerateSimilarityPDF();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,16 @@
       object[property] = value;
   }
 
-  describe('Error', function() {
-    it('should create an instance of Error', function() {
-      // uncomment below and update the code to test Error
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be.a(TurnitinCoreApi.Error);
+  describe('GenerateSimilarityPDF', function() {
+    it('should create an instance of GenerateSimilarityPDF', function() {
+      // uncomment below and update the code to test GenerateSimilarityPDF
+      //var instance = new TurnitinCoreApi.GenerateSimilarityPDF();
+      //expect(instance).to.be.a(TurnitinCoreApi.GenerateSimilarityPDF);
     });
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property message (base name: "message")', function() {
-      // uncomment below and update the code to test the property message
-      //var instance = new TurnitinCoreApi.Error();
+    it('should have the property locale (base name: "locale")', function() {
+      // uncomment below and update the code to test the property locale
+      //var instance = new TurnitinCoreApi.GenerateSimilarityPDF();
       //expect(instance).to.be();
     });
 

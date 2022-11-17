@@ -1,18 +1,10 @@
-# TurnitinCoreApi.SimilarityViewerUrlSettings
+# TurnitinCoreApi.GenerateSimilarityPDF
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authorMetadataOverride** | [**AuthorMetadataOverride**](AuthorMetadataOverride.md) |  | [optional] 
-**viewerUserId** | **String** | viewer&#39;s user ID | [optional] 
 **locale** | **String** | two character locale language setting (e.g. &#39;en&#39; or &#39;de&#39;) or full value | [optional] 
-**viewerDefaultPermissionSet** | **String** | Default viewer permission set, accepts INSTRUCTOR, LEARNER, EDITOR, USER, APPLICANT, ADMINISTRATOR, UNDEFINED | [optional] 
-**viewerPermissions** | [**ViewerPermissions**](ViewerPermissions.md) |  | [optional] 
-**eula** | [**Eula**](Eula.md) |  | [optional] 
-**sidebar** | [**Sidebar**](Sidebar.md) |  | [optional] 
-**similarity** | [**SimilaritySettings**](SimilaritySettings.md) |  | [optional] 
-**annotations** | [**AnnotationsSettings**](AnnotationsSettings.md) |  | [optional] 
 
 
 

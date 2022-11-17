@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The FeaturesGenerationSettings model module.
- * @module model/FeaturesGenerationSettings
+ * The GenerateSimilarityPDF model module.
+ * @module model/GenerateSimilarityPDF
  * @version 1.0.258
  */
-class FeaturesGenerationSettings {
+class GenerateSimilarityPDF {
     /**
-     * Constructs a new <code>FeaturesGenerationSettings</code>.
-     * @alias module:model/FeaturesGenerationSettings
+     * Constructs a new <code>GenerateSimilarityPDF</code>.
+     * @alias module:model/GenerateSimilarityPDF
      */
     constructor() { 
         
-        FeaturesGenerationSettings.initialize(this);
+        GenerateSimilarityPDF.initialize(this);
     }
 
     /**
@@ -37,35 +37,32 @@ class FeaturesGenerationSettings {
     }
 
     /**
-     * Constructs a <code>FeaturesGenerationSettings</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>GenerateSimilarityPDF</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/FeaturesGenerationSettings} obj Optional instance to populate.
-     * @return {module:model/FeaturesGenerationSettings} The populated <code>FeaturesGenerationSettings</code> instance.
+     * @param {module:model/GenerateSimilarityPDF} obj Optional instance to populate.
+     * @return {module:model/GenerateSimilarityPDF} The populated <code>GenerateSimilarityPDF</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new FeaturesGenerationSettings();
+            obj = obj || new GenerateSimilarityPDF();
 
-            if (data.hasOwnProperty('search_repositories')) {
-                obj['search_repositories'] = ApiClient.convertToType(data['search_repositories'], ['String']);
-            }
-            if (data.hasOwnProperty('submission_auto_excludes')) {
-                obj['submission_auto_excludes'] = ApiClient.convertToType(data['submission_auto_excludes'], 'Boolean');
+            if (data.hasOwnProperty('locale')) {
+                obj['locale'] = ApiClient.convertToType(data['locale'], 'String');
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>FeaturesGenerationSettings</code>.
+     * Validates the JSON data with respect to <code>GenerateSimilarityPDF</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>FeaturesGenerationSettings</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GenerateSimilarityPDF</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is an array
-        if (!Array.isArray(data['search_repositories'])) {
-            throw new Error("Expected the field `search_repositories` to be an array in the JSON data but got " + data['search_repositories']);
+        // ensure the json data is a string
+        if (data['locale'] && !(typeof data['locale'] === 'string' || data['locale'] instanceof String)) {
+            throw new Error("Expected the field `locale` to be a primitive type in the JSON string but got " + data['locale']);
         }
 
         return true;
@@ -77,65 +74,150 @@ class FeaturesGenerationSettings {
 
 
 /**
- * List of repositories to search
- * @member {Array.<module:model/FeaturesGenerationSettings.SearchRepositoriesEnum>} search_repositories
+ * two character locale language setting (e.g. 'en' or 'de') or full value
+ * @member {module:model/GenerateSimilarityPDF.LocaleEnum} locale
  */
-FeaturesGenerationSettings.prototype['search_repositories'] = undefined;
-
-/**
- * @member {Boolean} submission_auto_excludes
- */
-FeaturesGenerationSettings.prototype['submission_auto_excludes'] = undefined;
+GenerateSimilarityPDF.prototype['locale'] = undefined;
 
 
 
 
 
 /**
- * Allowed values for the <code>searchRepositories</code> property.
+ * Allowed values for the <code>locale</code> property.
  * @enum {String}
  * @readonly
  */
-FeaturesGenerationSettings['SearchRepositoriesEnum'] = {
+GenerateSimilarityPDF['LocaleEnum'] = {
 
     /**
-     * value: "INTERNET"
+     * value: "ar-SA"
      * @const
      */
-    "INTERNET": "INTERNET",
+    "ar-SA": "ar-SA",
 
     /**
-     * value: "PUBLICATION"
+     * value: "cs-CZ"
      * @const
      */
-    "PUBLICATION": "PUBLICATION",
+    "cs-CZ": "cs-CZ",
 
     /**
-     * value: "SUBMITTED_WORK"
+     * value: "de-DE"
      * @const
      */
-    "SUBMITTED_WORK": "SUBMITTED_WORK",
+    "de-DE": "de-DE",
 
     /**
-     * value: "PRIVATE"
+     * value: "el-GR"
      * @const
      */
-    "PRIVATE": "PRIVATE",
+    "el-GR": "el-GR",
 
     /**
-     * value: "CROSSREF"
+     * value: "en-US"
      * @const
      */
-    "CROSSREF": "CROSSREF",
+    "en-US": "en-US",
 
     /**
-     * value: "CROSSREF_POSTED_CONTENT"
+     * value: "es-MX"
      * @const
      */
-    "CROSSREF_POSTED_CONTENT": "CROSSREF_POSTED_CONTENT"
+    "es-MX": "es-MX",
+
+    /**
+     * value: "fi-FI"
+     * @const
+     */
+    "fi-FI": "fi-FI",
+
+    /**
+     * value: "fr-FR"
+     * @const
+     */
+    "fr-FR": "fr-FR",
+
+    /**
+     * value: "it-IT"
+     * @const
+     */
+    "it-IT": "it-IT",
+
+    /**
+     * value: "ja-JP"
+     * @const
+     */
+    "ja-JP": "ja-JP",
+
+    /**
+     * value: "ko-KR"
+     * @const
+     */
+    "ko-KR": "ko-KR",
+
+    /**
+     * value: "nl-NL"
+     * @const
+     */
+    "nl-NL": "nl-NL",
+
+    /**
+     * value: "pl-PL"
+     * @const
+     */
+    "pl-PL": "pl-PL",
+
+    /**
+     * value: "pt-BR"
+     * @const
+     */
+    "pt-BR": "pt-BR",
+
+    /**
+     * value: "ro-RO"
+     * @const
+     */
+    "ro-RO": "ro-RO",
+
+    /**
+     * value: "ru-RU"
+     * @const
+     */
+    "ru-RU": "ru-RU",
+
+    /**
+     * value: "sv-SE"
+     * @const
+     */
+    "sv-SE": "sv-SE",
+
+    /**
+     * value: "tr-TR"
+     * @const
+     */
+    "tr-TR": "tr-TR",
+
+    /**
+     * value: "vi-VN"
+     * @const
+     */
+    "vi-VN": "vi-VN",
+
+    /**
+     * value: "zh-CN"
+     * @const
+     */
+    "zh-CN": "zh-CN",
+
+    /**
+     * value: "zh-TW"
+     * @const
+     */
+    "zh-TW": "zh-TW"
 };
 
 
 
-export default FeaturesGenerationSettings;
+export default GenerateSimilarityPDF;
 

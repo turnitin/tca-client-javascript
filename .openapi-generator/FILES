@@ -5,6 +5,7 @@ README.md
 docs/AddGroupAttachmentRequest.md
 docs/AddGroupAttachmentResponse.md
 docs/AggregateGroup.md
+docs/AnnotationsSettings.md
 docs/AuthorMetadataOverride.md
 docs/EULAApi.md
 docs/Error.md
@@ -19,6 +20,7 @@ docs/FeaturesSimilarity.md
 docs/FeaturesSimilarityViewSettings.md
 docs/FeaturesTenant.md
 docs/FeaturesViewerModes.md
+docs/GenerateSimilarityPDF.md
 docs/GetGroupAttachments200Response.md
 docs/Group.md
 docs/GroupAttachmentResponse.md
@@ -82,6 +84,7 @@ src/index.js
 src/model/AddGroupAttachmentRequest.js
 src/model/AddGroupAttachmentResponse.js
 src/model/AggregateGroup.js
+src/model/AnnotationsSettings.js
 src/model/AuthorMetadataOverride.js
 src/model/Error.js
 src/model/Eula.js
@@ -94,6 +97,7 @@ src/model/FeaturesSimilarity.js
 src/model/FeaturesSimilarityViewSettings.js
 src/model/FeaturesTenant.js
 src/model/FeaturesViewerModes.js
+src/model/GenerateSimilarityPDF.js
 src/model/GetGroupAttachments200Response.js
 src/model/Group.js
 src/model/GroupAttachmentResponse.js
@@ -147,6 +151,7 @@ test/api/WebhookApi.spec.js
 test/model/AddGroupAttachmentRequest.spec.js
 test/model/AddGroupAttachmentResponse.spec.js
 test/model/AggregateGroup.spec.js
+test/model/AnnotationsSettings.spec.js
 test/model/AuthorMetadataOverride.spec.js
 test/model/Error.spec.js
 test/model/Eula.spec.js
@@ -159,6 +164,7 @@ test/model/FeaturesSimilarity.spec.js
 test/model/FeaturesSimilarityViewSettings.spec.js
 test/model/FeaturesTenant.spec.js
 test/model/FeaturesViewerModes.spec.js
+test/model/GenerateSimilarityPDF.spec.js
 test/model/GetGroupAttachments200Response.spec.js
 test/model/Group.spec.js
 test/model/GroupAttachmentResponse.spec.js

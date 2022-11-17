@@ -11,61 +11,74 @@
  *
  */
 
-(function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    // AMD.
-    define(['expect.js', process.cwd()+'/src/index'], factory);
-  } else if (typeof module === 'object' && module.exports) {
-    // CommonJS-like environments that support module.exports, like Node.
-    factory(require('expect.js'), require(process.cwd()+'/src/index'));
-  } else {
-    // Browser globals (root is window)
-    factory(root.expect, root.TurnitinCoreApi);
-  }
-}(this, function(expect, TurnitinCoreApi) {
-  'use strict';
+import ApiClient from '../ApiClient';
 
-  var instance;
+/**
+ * The AnnotationsSettings model module.
+ * @module model/AnnotationsSettings
+ * @version 1.0.258
+ */
+class AnnotationsSettings {
+    /**
+     * Constructs a new <code>AnnotationsSettings</code>.
+     * @alias module:model/AnnotationsSettings
+     */
+    constructor() { 
+        
+        AnnotationsSettings.initialize(this);
+    }
 
-  beforeEach(function() {
-    instance = new TurnitinCoreApi.Error();
-  });
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj) { 
+    }
 
-  var getProperty = function(object, getter, property) {
-    // Use getter method if present; otherwise, get the property directly.
-    if (typeof object[getter] === 'function')
-      return object[getter]();
-    else
-      return object[property];
-  }
+    /**
+     * Constructs a <code>AnnotationsSettings</code> from a plain JavaScript object, optionally creating a new instance.
+     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @param {module:model/AnnotationsSettings} obj Optional instance to populate.
+     * @return {module:model/AnnotationsSettings} The populated <code>AnnotationsSettings</code> instance.
+     */
+    static constructFromObject(data, obj) {
+        if (data) {
+            obj = obj || new AnnotationsSettings();
 
-  var setProperty = function(object, setter, property, value) {
-    // Use setter method if present; otherwise, set the property directly.
-    if (typeof object[setter] === 'function')
-      object[setter](value);
-    else
-      object[property] = value;
-  }
+            if (data.hasOwnProperty('enabled')) {
+                obj['enabled'] = ApiClient.convertToType(data['enabled'], 'Boolean');
+            }
+        }
+        return obj;
+    }
 
-  describe('Error', function() {
-    it('should create an instance of Error', function() {
-      // uncomment below and update the code to test Error
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be.a(TurnitinCoreApi.Error);
-    });
+    /**
+     * Validates the JSON data with respect to <code>AnnotationsSettings</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AnnotationsSettings</code>.
+     */
+    static validateJSON(data) {
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be();
-    });
+        return true;
+    }
 
-    it('should have the property message (base name: "message")', function() {
-      // uncomment below and update the code to test the property message
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be();
-    });
 
-  });
+}
 
-}));
+
+
+/**
+ * Used to enable annotations
+ * @member {Boolean} enabled
+ */
+AnnotationsSettings.prototype['enabled'] = undefined;
+
+
+
+
+
+
+export default AnnotationsSettings;
+

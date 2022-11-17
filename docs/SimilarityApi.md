@@ -288,7 +288,7 @@ Name | Type | Description  | Notes
 
 ## requestSimilarityReportPdf
 
-> RequestPdfResponse requestSimilarityReportPdf(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id)
+> RequestPdfResponse requestSimilarityReportPdf(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, generateSimilarityPDF)
 
 Request Pdf download and returns the Pdf Id
 
@@ -307,7 +307,8 @@ let apiInstance = new TurnitinCoreApi.SimilarityApi();
 let xTurnitinIntegrationName = myintegration; // String | a human readable string representing the type of integration being used
 let xTurnitinIntegrationVersion = v1.0.2; // String | the version of the integration platform being used
 let id = "id_example"; // String | The Submission ID (returned upon a successful POST to /submissions) 
-apiInstance.requestSimilarityReportPdf(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, (error, data, response) => {
+let generateSimilarityPDF = new TurnitinCoreApi.GenerateSimilarityPDF(); // GenerateSimilarityPDF | 
+apiInstance.requestSimilarityReportPdf(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, generateSimilarityPDF, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -324,6 +325,7 @@ Name | Type | Description  | Notes
  **xTurnitinIntegrationName** | **String**| a human readable string representing the type of integration being used | 
  **xTurnitinIntegrationVersion** | **String**| the version of the integration platform being used | 
  **id** | **String**| The Submission ID (returned upon a successful POST to /submissions)  | 
+ **generateSimilarityPDF** | [**GenerateSimilarityPDF**](GenerateSimilarityPDF.md)|  | 
 
 ### Return type
 
@@ -335,6 +337,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
+- **Content-Type**: application/json
 - **Accept**: application/json
 

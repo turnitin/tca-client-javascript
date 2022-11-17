@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ## indexSubmission
 
-> IndexStateSettings indexSubmission(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id)
+> IndexStateSettings indexSubmission(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, opts)
 
 Index and return index state of submission
 
@@ -83,7 +83,10 @@ let apiInstance = new TurnitinCoreApi.IndexApi();
 let xTurnitinIntegrationName = myintegration; // String | a human readable string representing the type of integration being used
 let xTurnitinIntegrationVersion = v1.0.2; // String | the version of the integration platform being used
 let id = "id_example"; // String | The Submission ID (returned upon a successful POST to /submissions) 
-apiInstance.indexSubmission(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, (error, data, response) => {
+let opts = {
+  'asynchronous': true // Boolean | asynchronous request
+};
+apiInstance.indexSubmission(xTurnitinIntegrationName, xTurnitinIntegrationVersion, id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -100,6 +103,7 @@ Name | Type | Description  | Notes
  **xTurnitinIntegrationName** | **String**| a human readable string representing the type of integration being used | 
  **xTurnitinIntegrationVersion** | **String**| the version of the integration platform being used | 
  **id** | **String**| The Submission ID (returned upon a successful POST to /submissions)  | 
+ **asynchronous** | **Boolean**| asynchronous request | [optional] 
 
 ### Return type
 

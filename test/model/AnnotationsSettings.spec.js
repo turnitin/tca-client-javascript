@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new TurnitinCoreApi.Error();
+    instance = new TurnitinCoreApi.AnnotationsSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,16 @@
       object[property] = value;
   }
 
-  describe('Error', function() {
-    it('should create an instance of Error', function() {
-      // uncomment below and update the code to test Error
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be.a(TurnitinCoreApi.Error);
+  describe('AnnotationsSettings', function() {
+    it('should create an instance of AnnotationsSettings', function() {
+      // uncomment below and update the code to test AnnotationsSettings
+      //var instance = new TurnitinCoreApi.AnnotationsSettings();
+      //expect(instance).to.be.a(TurnitinCoreApi.AnnotationsSettings);
     });
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
-      //var instance = new TurnitinCoreApi.Error();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property message (base name: "message")', function() {
-      // uncomment below and update the code to test the property message
-      //var instance = new TurnitinCoreApi.Error();
+    it('should have the property enabled (base name: "enabled")', function() {
+      // uncomment below and update the code to test the property enabled
+      //var instance = new TurnitinCoreApi.AnnotationsSettings();
       //expect(instance).to.be();
     });
 
